@@ -1,8 +1,9 @@
 print(2**3)
-def raise_to_power(base_num, pow_num):
-    return base_num ** pow_num
+#line 3 - 6 is a really short way of writing exponents.
+ ##def raise_to_power(base_num, pow_num):
+     ##return base_num ** pow_num
 
-print(raise_to_power(2, 3))
+  ##print(raise_to_power(2, 3))
 
 def raise_to_power(base_num, pow_num):
     result = 1
