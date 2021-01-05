@@ -1,29 +1,41 @@
-# Program checks if the number is positive or negative
-# And displays an appropriate message
-import time
-time.time()
-seconds = time.time()
-local_time = time.ctime(seconds)
-print ("Local time:", local_time)
-morning = "00:00:00"
-afternoon = "12:00:00"
-evening = "16:00:00"
-night = "21:00:00"
-if local_time < morning:
-    print("Good afternoon.")
-elif local_time > morning and afternoon :
-    print("Good evening.")
-elif local_time > evening:
-    print("Good night.")
-else :
-    print("Good morning.")
+
+# import time
+# time.time()
+# seconds = time.time()
+# local_time = time.ctime(seconds)
     
-    
-#num = 3
-#if num == 0:
-#  print("Zero")
-#elif num > 0:
-  #print("Positive Number")
-#else:
-#  print ("Negative number")
+# name = input("Please input your name: ")
+# print("Hello %r, what's the time?" %name)
+# print("Please input time in 24-hour format. E.g: 12:00.")
+# print ("Local time is:", local_time)
+
+# if local_time >= "00:00" and local_time <= "11:59":
+#     print("Hey %r, Good Morning." %name)
+# elif local_time >= "12:00" and local_time <= "15:59":
+#     print("Hey %r, Good Afternoon." %name)
+# elif local_time >= "16:00" and local_time <= "20:59":
+#     print("Hey %r, Good Evening." %name)
+# elif local_time >= "21:00" and local_time <= "23:59":
+#     print("Hey %r, Good Morning." %name)
+# else: 
+#     print("Hey %r, The number is invalid." %name)
+
+name = input("Please input your name: ")
+print("Hello %r, what's the time?" %name)
+print("Please input time in 24-hour format. E.g: 12:00.")
+time = input("Time is: ")
+
+if time >= "00:00" and time <= "11:59":
+    print("Hey %r, Good Morning." %name)
+elif time >= "12:00" and time <= "15:59":
+    print("Hey %r, Good Afternoon." %name)
+elif time >= "16:00" and time <= "20:59":
+    print("Hey %r, Good Evening." %name)
+elif time >= "21:00" and time <= "23:59":
+    print("Hey %r, Good Morning." %name)
+else: 
+    print("Hey %r, The number is invalid." %name)
+
+
+
   
